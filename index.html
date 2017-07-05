@@ -8,15 +8,50 @@
 
 <body>
   <!--Recursion-->
-  <h1> <b>RECURSION:</b> </h1> <button onclick="myFunction()">Click here to sum below Numbers</button>
-  <p id="demo"> <b>SUM OF DIGITS:5,3,2</b> </p>
-  <div style="overflow: auto;">
-    <div style="float: left;">Div 1</div>
-    <div style="float: left;">Div 2</div>
-  </div>
+  <section>
+    <h1> <b>RECURSION:</b> </h1> <button onclick="myFunction()">Click here to sum below Numbers</button>
+    
+    <pre>
+        <b>Code:</b>
+        var numArray = [5, 2, 3];
+        function sumNonRecursive(numArray) {
+          var n = 0;
+          l = numArray.length;
+          for (var i = 0; i < l; i++) {
+            n = n + numArray[i];
+          }
+          return n;
+        }
+      </pre>
+      <code>
+        <p id="demo"> <b>SUM OF DIGITS:5,3,2</b> </p>
+      </code>
+  </section>
+  <!-- Sum of 2d Array -->
+  <section>
+    <h1><b>Sum of 2d array</b></h1>
+    <pre>
+    <b>Code:</b>
+      var array1 = [[33, 22, 40], [41, 33, 41]];
+      var array2 = [[32, 22, 40], [42, 33, 41]];
+      for(var i = 0; i < array1.length; i++){
+          for(var j = 0; j < array2[i].length; j++){
+              console.log(array1[i][j] + array2[i][j]);
+              
+          }
+      }
+    </pre>
+  </section>
   <!--Shuffle Images-->
   <div id="shuffle_img">
-    <h1> <b>Shuffle-Images:</b> </h1> <button id="btn" onclick="rotateArray(imgArray)">Click here to Shuffle-Images</button> <img class="image" src="img/1.jpg" alt="Bull-1"> <img class="image" src="img/2.jpg" alt="Bull-2"> <img class="image" src="img/3.jpg" alt="Bull-3"> <img class="image" src="img/4.jpg" alt="Bull-4"> </div>
+    <h1> <b>Shuffle-Images:</b> </h1>
+    <button
+      id="btn" onclick="rotateArray(imgArray)">Click here to Shuffle-Images</button>
+      <img class="image" src="img/1.jpg"
+        alt="Bull-1"> <img class="image" src="img/2.jpg"
+        alt="Bull-2"> <img class="image" src="img/3.jpg"
+        alt="Bull-3"> <img class="image" src="img/4.jpg"
+        alt="Bull-4"> </div>
   <!--Form Validation-->
   <h1>Forms Validation</h1>
   <ul role="menu">
@@ -35,13 +70,25 @@
             <input type="text" size="20" name="answer">
           </label> </form>
         <form name="example">
-          <h2>Email-Validation</h2> <input type="text" size="20" name="email"> <br> <strong>Feedback please:</strong> <br> <textarea name="S1" rows="2" cols="20"></textarea> <br> <input type="submit" onclick="emailcheck()" name="B1" value="Submit"> </form>
+          <h2>Email-Validation</h2> <input type="text"
+            size="20" name="email"> <br> <strong>Feedback please:</strong>          <br> <textarea name="S1" rows="2"
+            cols="20"></textarea> <br>
+          <input
+            type="submit" onclick="emailcheck()"
+            name="B1" value="Submit"> </form>
       </div>
     </li>
   </ul>
   <!--Aria Controls-->
   <section role="navigation" class="aria-controls">
-    <h2 id="demo"></h2> <a class="aria" href="http://www.origins.com/" aria-expanded="false">Aria Expanded</a> <a class="aria" href="http://www.origins.com/" aria-atomic="true">Aria Atomic</a> <a class="aria" href="http://www.origins.com/" aria-busy="false">Aria Busy</a> <a class="aria" href="http://www.origins.com/" aria-controls>Aria Controls</a> <span>hai</span> </section> <button onclick="showInfo();" aria-controls="I">Show info</button> …
+    <h2 id="demo"></h2> <a class="aria" href="http://www.origins.com/"
+      aria-expanded="false">Aria Expanded</a>    <a class="aria" href="http://www.origins.com/"
+      aria-atomic="true">Aria Atomic</a>
+    <a
+      class="aria" href="http://www.origins.com/"
+      aria-busy="false">Aria Busy</a> <a class="aria" href="http://www.origins.com/"
+        aria-controls>Aria Controls</a> <span>hai</span>      </section> <button onclick="showInfo();"
+    aria-controls="I">Show info</button> …
   <div id="I">Information.</div>
   <section class="matrixarray">
     <h1>Matrix 2dArray</h1>
@@ -49,39 +96,48 @@
   </section>
   <!-- Keyboard Navigation -->
   <section class="keyboard Navigation">
-  <h2>Keyboard Navigation</h2>
-    <form action="" method="get">
-        <input type="text" name="keyboard Input" size="40" onkeydown="myFunction(event)">
-    </form>
-    <form>
-        <input id="target" type="text" value="Hello there">
-    </form>
-
-    <ul role="menubar" class="menu_navigation" >
-      <li > 
-      <a role="menuitem" class="menuitem" href="mb-about.html#overview" tabindex="0">About</a>
-        <ul role="menu" >
-          <li><a role="menuitem" href="mb-about.html#overview" tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview" tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview" tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview" tabindex="0">Overview</a></li>
+    <h2>Keyboard Navigation</h2>
+    <form action="" method="get"> <input type="text" name="keyboard Input"
+        size="40" onkeydown="myFunction(event)">      </form>
+    <form> <input id="target" type="text" value="Hello there">      </form>
+    <ul role="menubar" class="menu_navigation">
+      <li> <a role="menuitem" class="menuitem"
+          href="mb-about.html#overview" tabindex="0">About</a>
+        <ul role="menu">
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
         </ul>
       </li>
-      <li>
-      <a role="menuitem" class="menuit" href="mb-about.html#overview" tabindex="1">About</a>
-        <ul role="menu" >
-          <li> <a role="menuitem" href="mb-about.html#overview" tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview"  tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview"  tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview"  tabindex="0">Overview</a></li>
+      <li> <a role="menuitem" class="menuit" href="mb-about.html#overview"
+          tabindex="1">About</a>
+        <ul role="menu">
+          <li> <a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
         </ul>
       </li>
-      <li > <a role="menuitem" class="menuitem" href="mb-about.html#overview"  tabindex="2">About</a>
-        <ul role="menu" >
-          <li> <a role="menuitem" href="mb-about.html#overview" tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview"  tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview"  tabindex="0">Overview</a></li>
-          <li><a role="menuitem" href="mb-about.html#overview"  tabindex="0">Overview</a></li>
+      <li> <a role="menuitem" class="menuitem"
+          href="mb-about.html#overview" tabindex="2">About</a>
+        <ul role="menu">
+          <li> <a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
+          <li><a role="menuitem" href="mb-about.html#overview"
+              tabindex="0">Overview</a></li>
         </ul>
       </li>
     </ul>
